@@ -1,0 +1,223 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  max-width: 720px;
+  margin: auto auto;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER */
+header {
+  background-color: rgba(91, 115, 157, 0.741);
+  color: white;
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+nav {
+  overflow: hidden;
+  margin: auto auto;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+p {
+  display: block;
+  justify-content: center;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+header p {
+  font-size: 1.7em;
+}
+
+a {
+  color: white;
+  padding: 1em 1em 1em 1em;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  margin: auto auto;
+}
+
+.header-links {
+  float: left;
+}
+
+.donate-btn {
+  float: right;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+video {
+  margin: 0 auto;
+}
+
+/* MAIN CONTENT SECTION 1: WHY? */
+.why {
+  padding: 5em 5em 5em 5em;
+}
+/* MAIN CONTENT SECTION 2: VISITING */
+.visiting-parent {
+  width: 100%;
+  overflow: hidden;
+}
+.visit-col-one,
+.visit-col-two {
+  width: 50%;
+  float: left;
+  background-color: gray;
+  padding: 5em 5em 5em 5em;
+}
+
+.visit-col-one {
+  padding-left: 10em;
+}
+
+.visit-col-two {
+  padding-right: 10em;
+}
+
+.visit-img {
+  display: block;
+  margin: auto auto;
+  width: 448px;
+  height: 277px;
+  object-fit: cover;
+}
+
+.visit-btn {
+  margin: auto auto;
+  display: block;
+}
+
+/* MAIN SECTION 3: VOLUNTEER */
+.volunteer {
+  padding: 5em 5em 5em 5em;
+  margin: auto auto;
+}
+
+.volunteer-btn {
+  margin: auto auto;
+  display: block;
+}
+/* FOOTER */
+
+footer {
+  background-color: #1b354f;
+  width: 100%;
+  padding: 4em 4em;
+  float: left;
+}
+
+i {
+  color: white;
+  font-size: 2em;
+  padding: .25em .25em .25em .25em;
+}
+
+.footer-text {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.footer-links {
+  float: left;
+  margin-left: 5em;
+  text-align: left;
+  display: block;
+}
+
+.footer-contact {
+  float: right;
+  margin-right: 5em;
+  text-align: right;
+  display: block;
+}
+
+footer small,
+h4,
+h5 {
+  color: white;
+}
+
+/* FOOTER PART 2: LEGALESSE */
+.legalese-logo {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+.legalese {
+  float: left;
+  font-size: 0.8em;
+  width: 100%;
+  clear: both;
+}
+
+.footer-logo {
+  float: right;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+hr {
+  overflow: visible;
+  height: 0;
+  box-sizing: content-box;
+}
+
+.hr-invis {
+  display: none;
+  clear: both;
+}
